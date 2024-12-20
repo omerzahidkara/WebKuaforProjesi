@@ -45,7 +45,7 @@ namespace OtoServisSatis.Data
                 Email = "admin@otoservissatis.tc",
                 KullaniciAdi = "admin",
                 Sifre= "123456",
-                Rol = new Rol { ID = 1},
+                // Rol = new Rol { ID = 1},
                 RolID = 1,
                 Soyadi = "admin",
                 Telefon="0850",
