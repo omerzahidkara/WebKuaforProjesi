@@ -1,3 +1,7 @@
+using OtoServisSatis.Data;
+using OtoServisSatis.Service.Abstract;
+using OtoServisSatis.Service.Concrete;
+
 namespace OtoServisSatis.WebUI
 {
     public class Program
@@ -6,8 +10,14 @@ namespace OtoServisSatis.WebUI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<DatabaseContext>();
+
+            builder.Services.AddTransient(typeof(IService<>), typeof(Service<>));
 
             var app = builder.Build();
 
@@ -25,6 +35,11 @@ namespace OtoServisSatis.WebUI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.MapControllerRoute(
+            name: "admin",
+            pattern: "{area:exists}/{controller=Main}/{action=Index}/{id?}"
+          );
 
             app.MapControllerRoute(
                 name: "default",
