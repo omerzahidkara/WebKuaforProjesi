@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
-
+// Kullanici
 namespace OtoServisSatis.Entities
 {
     public class Kullanici : IEntity
