@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//servis
 namespace OtoServisSatis.Entities
 {
     public class Servis : IEntity
