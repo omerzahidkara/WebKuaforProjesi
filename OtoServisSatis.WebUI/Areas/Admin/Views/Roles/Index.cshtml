@@ -4,10 +4,10 @@
     ViewData["Title"] = "Roller";
 }
 
-<h1>Index</h1>
+<h1>Roller</h1>
 
 <p>
-    <a asp-action="Create">Yeni ekle</a>
+    <a class="btn btn-outline-primary" asp-action="Create">Yeni ekle</a>
 </p>
 <table class="table">
     <thead>
@@ -25,9 +25,9 @@
                 @Html.DisplayFor(modelItem => item.Adi)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Düzenle</a> |
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ID">Düzenle</a> |
                 
-                <a asp-action="Delete" asp-route-id="@item.ID">Sil</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ID">Sil</a>
             </td>
         </tr>
 }

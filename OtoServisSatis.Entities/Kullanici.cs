@@ -12,8 +12,10 @@ namespace OtoServisSatis.Entities
     {
         public int ID { get; set; }
         [StringLength(50)]
+        [Display(Name = "Adı")]
         public string Adi { get; set; }
-        [StringLength(50)]
+        [StringLength(50)] 
+        [Display(Name = "Soyadı")]
         public string Soyadi { get; set; }
         [StringLength(50)]
         public string Email { get; set; }
@@ -26,6 +28,7 @@ namespace OtoServisSatis.Entities
 
         public bool AktifMi { get; set; }
 
+        [Display(Name ="Eklenme Tarihi"),ScaffoldColumn(false)]
         public DateTime? EklenmeTarihi { get; set; } = DateTime.Now;
 
         public int RolID { get; set; }
