@@ -10,7 +10,7 @@ namespace OtoServisSatis.Data.Abstract
     {
         List<T> GetAll();
         List<T> GetAll(Expression<Func<T,bool>> expression);
-
+        // Generic sınıflar
         T Get(Expression<Func<T, bool>> expression);
         T Find(int id);
 
