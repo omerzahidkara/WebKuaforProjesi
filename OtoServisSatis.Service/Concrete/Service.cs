@@ -15,6 +15,7 @@ namespace OtoServisSatis.Service.Concrete
     {
         public Service(DatabaseContext context) : base(context)
         {
+            // EF islemleri repository'den miras alındı
         }
     }
 }
