@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// Musteri
 namespace OtoServisSatis.Entities
 {
     public class Musteri : IEntity
